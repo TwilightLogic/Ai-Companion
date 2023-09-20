@@ -36,3 +36,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## The Unsolved Problems
 
 1. I haven't figure out **which routes are protected and which are unprotected**.
+2. I haven't Figure out wtf is `cn` in "lib/utils.ts"
