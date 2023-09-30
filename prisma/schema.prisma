@@ -3,7 +3,7 @@
 
 generator client {
   provider = "prisma-client-js"
-  // previewFeatures = ["fullTextSearch", "fullTextIndex"] // `fullTextIndex` is unable to use in PostgreSQL
+  previewFeatures = ["fullTextSearch"] // `fullTextIndex` is unable to use in PostgreSQL
 }
 
 datasource db {
