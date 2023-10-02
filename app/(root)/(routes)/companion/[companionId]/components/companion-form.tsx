@@ -14,7 +14,7 @@ import {
   FormDescription,
 } from '@/components/ui/form';
 import { Separator } from '@/components/ui/separator';
-import { ImageUpload } from '@/components/upload-image';
+import { ImageUpload } from '@/components/image-upload';
 
 interface CompanionFormProps {
   initialData: Companion | null;
