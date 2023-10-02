@@ -8,10 +8,8 @@ import {
   Form,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
   FormControl,
-  FormDescription,
 } from '@/components/ui/form';
 import { Separator } from '@/components/ui/separator';
 import { ImageUpload } from '@/components/image-upload';

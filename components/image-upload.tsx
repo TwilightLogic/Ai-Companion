@@ -21,6 +21,7 @@ export const ImageUpload = ({ value, onChange, disable }: ImageUploadProps) => {
     return null;
   }
 
+  // TODO: Upload image bug unfixed
   return (
     <div className='space-y-4 h-full flex flex-col justify-center items-center'>
       <CldUploadButton
