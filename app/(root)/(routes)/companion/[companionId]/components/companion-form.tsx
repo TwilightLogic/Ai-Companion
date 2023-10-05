@@ -10,9 +10,12 @@ import {
   FormItem,
   FormMessage,
   FormControl,
+  FormLabel,
+  FormDescription,
 } from '@/components/ui/form';
 import { Separator } from '@/components/ui/separator';
 import { ImageUpload } from '@/components/image-upload';
+import { Input } from '@/components/ui/input';
 
 interface CompanionFormProps {
   initialData: Companion | null;
@@ -86,6 +89,48 @@ export const CompanionForm = ({
               </FormItem>
             )}
           />
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+            <FormField
+              name='name'
+              control={form.control}
+              render={({ field }) => (
+                <FormItem className='col-span-2 md:col-span-1'>
+                  <FormLabel>Name</FormLabel>
+                  <FormControl>
+                    <Input
+                      disabled={isLoading}
+                      placeholder='Elon Musk'
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormDescription>
+                    This is how your AI Companion named.
+                  </FormDescription>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              name='description'
+              control={form.control}
+              render={({ field }) => (
+                <FormItem className='col-span-2 md:col-span-1'>
+                  <FormLabel>Description</FormLabel>
+                  <FormControl>
+                    <Input
+                      disabled={isLoading}
+                      placeholder='CEO & Founder of Tesla, SpaceX'
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormDescription>
+                    Short description for your AI Companion.
+                  </FormDescription>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          </div>
         </form>
       </Form>
     </div>
