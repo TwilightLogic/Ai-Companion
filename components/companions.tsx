@@ -6,7 +6,7 @@ import { MessageSquare } from 'lucide-react';
 
 // 每个元素都是 Companion 类型的对象，并且必须包含 _count 属性，该属性的值是一个具有 message 属性的数字对象。
 interface CompanionProps {
-  data: (Companion & { _count: { message: number } })[];
+  data: (Companion & { _count: { messages: number } })[];
 }
 
 export const Companions = ({ data }: CompanionProps) => {
@@ -45,7 +45,7 @@ export const Companions = ({ data }: CompanionProps) => {
               <p className='lowercase'>@{item.userName}</p>
               <div className='flex items-center'>
                 <MessageSquare className='w-3 h-3 mr-1' />
-                {item._count.message}
+                {item._count.messages}
               </div>
             </CardFooter>
           </Link>

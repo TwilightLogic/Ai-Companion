@@ -14,7 +14,7 @@ const RootPage = async ({ searchParams }: RootPageProps) => {
       name: { search: searchParams.name },
     },
     orderBy: { createdAt: 'desc' },
-    include: { _count: { select: { message: true } } },
+    include: { _count: { select: { messages: true } } },
   });
   const categories = await prismadb.category.findMany();
 
