@@ -1,1 +1,1 @@
-# AA-Companion
+# AI-Companion
